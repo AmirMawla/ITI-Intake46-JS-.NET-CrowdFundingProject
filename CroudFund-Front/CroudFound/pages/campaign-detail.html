@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Details - Crowdfund</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .user-menu-dropdown {
+            position: absolute;
+            right: 0;
+            top: calc(100% + 12px);
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 12px;
+            min-width: 240px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border-color);
+            z-index: 1000;
+        }
+        .user-menu-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 12px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .user-menu-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 12px;
+            border-radius: 8px;
+            transition: background 0.2s;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .user-menu-item:hover {
+            background: var(--bg-card-hover);
+        }
+        .user-menu-divider {
+            height: 1px;
+            background: var(--border-color);
+            margin: 8px 0;
+        }
+        .campaign-detail-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 32px;
+            padding: 40px 0;
+        }
+        @media (max-width: 1024px) {
+            .campaign-detail-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .campaign-main {
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            padding: 32px;
+        }
+        .campaign-image-large {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 32px;
+        }
+        .campaign-tabs {
+            display: flex;
+            gap: 24px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 32px;
+        }
+        .campaign-tab {
+            padding: 12px 0;
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 16px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .campaign-tab.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+        }
+        .reward-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .reward-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 16px;
+        }
+        .review-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .review-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 12px;
+        }
+        .review-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <div class="logo-icon">C</div>
+                    <span>Crowdfund</span>
+                </div>
+                <div class="nav-links">
+                    <a href="../index.html">Explore</a>
+                    <a href="campaigns.html">Campaigns</a>
+                    <a href="#success-stories">Success Stories</a>
+                </div>
+                <div class="user-actions">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search campaigns...">
+                    </div>
+                    <div id="authButtons">
+                        <a href="login.html" class="btn btn-secondary">Sign In</a>
+                        <a href="create-campaign.html" class="btn btn-primary">Start a Campaign</a>
+                    </div>
+                    <div id="userMenu" style="display: none; position: relative;">
+                        <div class="user-profile" onclick="toggleUserMenu()" id="headerUserProfile">
+                            <img id="userProfileImage" src="" alt="User" style="display: none; width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                            <span id="userInitial">U</span>
+                        </div>
+                        <div id="userMenuDropdown" class="user-menu-dropdown" style="display: none;">
+                            <div class="user-menu-header">
+                                <img id="userDropdownImage" src="" alt="User" style="display: none; width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+                                <div>
+                                    <div id="userDropdownName" style="font-weight: 600;">User</div>
+                                    <div style="font-size: 12px; color: var(--text-muted);">View Profile</div>
+                                </div>
+                            </div>
+                            <div class="user-menu-divider"></div>
+                            <a href="dashboard.html" class="user-menu-item">
+                                <i class="fas fa-user"></i> Profile
+                            </a>
+                            <a href="settings.html" class="user-menu-item">
+                                <i class="fas fa-cog"></i> Settings
+                            </a>
+                            <div class="user-menu-divider"></div>
+                            <a href="#" class="user-menu-item" onclick="handleLogout(); return false;">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div style="margin: 24px 0;">
+            <a href="campaigns.html" style="color: var(--text-secondary);">← Return to Campaigns</a>
+        </div>
+
+        <div class="campaign-detail-container">
+            <!-- Main Content -->
+            <div class="campaign-main">
+                <img id="campaignImage" src="" alt="Campaign" class="campaign-image-large">
+                
+                <div>
+                    <h1 id="campaignTitle" style="font-size: 36px; font-weight: 700; margin-bottom: 8px;"></h1>
+                    <p id="campaignCreator" style="color: var(--text-secondary); margin-bottom: 24px;"></p>
+                </div>
+
+                <div class="campaign-tabs">
+                    <button class="campaign-tab active" onclick="switchTab('campaign')">Campaign</button>
+                    <button class="campaign-tab" onclick="switchTab('milestones')">Milestones</button>
+                    <button class="campaign-tab" onclick="switchTab('reviews')">
+                        Reviews <span id="reviewsCount" style="background: var(--primary-color); color: white; padding: 2px 8px; border-radius: 12px; font-size: 12px; margin-left: 8px;">0</span>
+                    </button>
+                    <button class="campaign-tab" onclick="switchTab('faq')">FAQ</button>
+                </div>
+
+                <div id="campaignContent">
+                    <div id="campaignTab">
+                        <div id="campaignDescription" style="line-height: 1.8; color: var(--text-secondary); margin-bottom: 32px;"></div>
+                        <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 16px;">The Core Specs</h3>
+                        <ul id="campaignSpecs" style="list-style: none; padding: 0;">
+                            <!-- Specs will be loaded here -->
+                        </ul>
+                    </div>
+                    <div id="milestonesTab" style="display: none;">
+                        <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 24px;">Campaign Milestones</h3>
+                        <div id="milestonesList"></div>
+                    </div>
+                    <div id="reviewsTab" style="display: none;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                            <h3 style="font-size: 24px; font-weight: 700;">Donor Reviews</h3>
+                            <button class="btn btn-primary" id="writeReviewBtn" onclick="showReviewForm()" style="display: none;">Write a Review</button>
+                        </div>
+                        <div id="reviewsList"></div>
+                        <div id="reviewForm" style="display: none; background: var(--bg-card); padding: 24px; border-radius: 12px; margin-top: 24px;">
+                            <h4 style="margin-bottom: 16px;">Leave a Review</h4>
+                            <div class="form-group">
+                                <label class="form-label">How much do you love this campaign?</label>
+                                <div id="reactionButtons" style="display: flex; gap: 12px; margin-bottom: 16px;">
+                                    <button class="btn btn-secondary" onclick="selectReaction('Like')"><i class="fas fa-thumbs-up"></i> Like</button>
+                                    <button class="btn btn-secondary" onclick="selectReaction('Love')"><i class="fas fa-heart"></i> Love</button>
+                                    <button class="btn btn-secondary" onclick="selectReaction('Support')"><i class="fas fa-handshake"></i> Support</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Public Comment (Optional)</label>
+                                <textarea class="form-textarea" id="reviewComment" placeholder="Share your thoughts..."></textarea>
+                            </div>
+                            <div style="display: flex; gap: 12px;">
+                                <button class="btn btn-primary" onclick="submitReview()">Submit Review</button>
+                                <button class="btn btn-secondary" onclick="hideReviewForm()">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="faqTab" style="display: none;">
+                        <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 24px;">Frequently Asked Questions</h3>
+                        <p style="color: var(--text-secondary);">No FAQs yet. Check back later!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div>
+                <div class="card" style="position: sticky; top: 100px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                        <button class="btn btn-secondary" style="padding: 8px;">Share</button>
+                    </div>
+                    
+                    <div style="margin-bottom: 24px;">
+                        <div style="font-size: 36px; font-weight: 700; margin-bottom: 8px;" id="pledgedAmount">$0</div>
+                        <p style="color: var(--text-secondary); margin-bottom: 16px;" id="pledgedText">pledged of $0 goal</p>
+                        <div class="progress-bar" style="margin-bottom: 16px;">
+                            <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px;">
+                            <div>
+                                <div style="font-size: 20px; font-weight: 700;" id="donatorsCount">0</div>
+                                <div style="font-size: 12px; color: var(--text-secondary);">DONATORS</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 20px; font-weight: 700;" id="daysLeft">0</div>
+                                <div style="font-size: 12px; color: var(--text-secondary);">DAYS LEFT</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" style="width: 100%; margin-bottom: 16px;" id="backButton" onclick="showSupportModal()">SUPPORT THIS CAMPAIGN</button>
+                    
+                    <div style="display: flex; gap: 16px;">
+                        <a href="#" style="color: var(--text-secondary); display: flex; align-items: center; gap: 4px;">
+                            <i class="fas fa-bookmark"></i> Save
+                        </a>
+                        <a href="#" style="color: var(--text-secondary); display: flex; align-items: center; gap: 4px;">
+                            <i class="fas fa-flag"></i> Report
+                        </a>
+                    </div>
+
+                    <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border-color);">
+                        <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 16px;">SUPPORT THIS CAMPAIGN</h4>
+                        <div id="rewardsList"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Support Modal -->
+    <div id="supportModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.8); z-index: 10000; align-items: center; justify-content: center;">
+        <div class="card" style="max-width: 500px; width: 90%; max-height: 90vh; overflow-y: auto;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                <h2 style="font-size: 24px; font-weight: 700;">Support this Campaign</h2>
+                <button onclick="hideSupportModal()" style="background: none; border: none; color: var(--text-secondary); font-size: 24px; cursor: pointer;">×</button>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Select an Amount</label>
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px;">
+                    <button class="btn btn-secondary" onclick="selectAmount(10)">$10</button>
+                    <button class="btn btn-secondary" onclick="selectAmount(25)">$25</button>
+                    <button class="btn btn-secondary" onclick="selectAmount(50)">$50</button>
+                    <button class="btn btn-secondary" onclick="selectAmount(100)">$100</button>
+                </div>
+                <div style="margin-top: 16px;">
+                    <label class="form-label">Or enter a custom amount</label>
+                    <input type="number" class="form-input" id="customAmount" placeholder="0.00" min="1" step="0.01">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Message of Support</label>
+                <p style="color: var(--text-secondary); margin-bottom: 12px;">How much do you love this campaign?</p>
+                <div id="loveRating" style="display: flex; gap: 8px; margin-bottom: 16px;">
+                    <i class="fas fa-heart" style="font-size: 24px; cursor: pointer; color: var(--text-muted);" onclick="setLoveRating(1)"></i>
+                    <i class="fas fa-heart" style="font-size: 24px; cursor: pointer; color: var(--text-muted);" onclick="setLoveRating(2)"></i>
+                    <i class="fas fa-heart" style="font-size: 24px; cursor: pointer; color: var(--text-muted);" onclick="setLoveRating(3)"></i>
+                    <i class="fas fa-heart" style="font-size: 24px; cursor: pointer; color: var(--text-muted);" onclick="setLoveRating(4)"></i>
+                    <i class="fas fa-heart" style="font-size: 24px; cursor: pointer; color: var(--text-muted);" onclick="setLoveRating(5)"></i>
+                </div>
+                <label class="form-label">Leave a public comment (optional)</label>
+                <textarea class="form-textarea" id="supportMessage" placeholder="I'm so excited to see this come to life!"></textarea>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border-color);">
+                <div>
+                    <div style="font-size: 12px; color: var(--text-secondary);">TOTAL PLEDGE</div>
+                    <div style="font-size: 32px; font-weight: 700;" id="totalPledge">$0.00</div>
+                </div>
+                <button class="btn btn-primary" onclick="confirmPledge()">Confirm Pledge</button>
+            </div>
+            
+            <p style="font-size: 12px; color: var(--text-muted); margin-top: 16px; display: flex; align-items: center; gap: 4px;">
+                <i class="fas fa-lock"></i> Secure encrypted payment processing
+            </p>
+        </div>
+    </div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/search-utils.js"></script>
+    <script src="../js/pages/campaign-detail.js"></script>
+</body>
+</html>
+

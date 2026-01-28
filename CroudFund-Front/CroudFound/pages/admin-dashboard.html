@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Crowdfund</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .admin-badge {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .admin-card-header {
+            background: var(--bg-darker);
+            padding: 16px 24px;
+            border-bottom: 2px solid var(--primary-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .admin-stat-card {
+            background: var(--bg-card);
+            border-left: 4px solid var(--primary-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .admin-stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 124, 255, 0.15);
+        }
+        .admin-control-panel {
+            background: var(--bg-darker);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+        .admin-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .admin-table th {
+            background: var(--bg-darker);
+            padding: 12px;
+            text-align: left;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-secondary);
+            border-bottom: 2px solid var(--primary-color);
+        }
+        .admin-table td {
+            padding: 16px 12px;
+            border-bottom: 1px solid var(--bg-darker);
+        }
+        .admin-table tr:hover {
+            background: var(--bg-darker);
+        }
+        /* Use the same solid sidebar/header styling as the rest of the app
+           so the admin layout doesn't look translucent or different. */
+        .admin-sidebar {
+            background: var(--bg-card);
+            border-right: 2px solid var(--primary-color);
+        }
+        .admin-header {
+            background: var(--bg-darker);
+            border-bottom: 2px solid var(--primary-color);
+        }
+        .admin-header .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .dashboard-header-actions {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 12px;
+            margin-left: auto;
+        }
+        .dashboard-header-actions .btn {
+            white-space: nowrap;
+        }
+        .payment-methods-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .payment-methods-chart-circle {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .payment-methods-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px 32px;
+            justify-content: center;
+            max-width: 600px;
+        }
+        .payment-methods-legend-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            font-size: 14px;
+            min-width: 120px;
+        }
+        .payment-methods-legend-color {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="admin-dashboard-page">
+    <!-- Admin Header -->
+    <header class="header admin-header">
+        <div class="container">
+            <nav class="nav">
+                    <div class="logo">
+                    <div class="logo-icon" style="background: linear-gradient(135deg, var(--primary-color), var(--accent-color));">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                        <span style="font-weight: 700;">Admin</span>
+                </div>
+                <div class="nav-links">
+                    <a href="admin-dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i> Control Center</a>
+                    <a href="admin-campaigns.html"><i class="fas fa-bullhorn"></i> Campaigns</a>
+                    <a href="admin-users.html"><i class="fas fa-users-cog"></i> Users</a>
+                    <a href="admin-pledges.html"><i class="fas fa-hand-holding-usd"></i> Pledges</a>
+                </div>
+                <div class="user-actions">
+                    <div class="user-profile" onclick="toggleUserMenu()" style="border: 2px solid var(--primary-color);">
+                        <img id="adminHeaderAvatarImg" style="display:none; width:100%; height:100%; object-fit:cover;" />
+                        <span id="adminInitial">A</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard">
+        <!-- Admin Sidebar -->
+        <div class="sidebar admin-sidebar">
+            <div style="margin-bottom: 32px; padding: 24px; background: var(--bg-darker); border-radius: 12px; border: 2px solid var(--primary-color);">
+                <div style="text-align: center;">
+                    <div style="width: 64px; height: 64px; margin: 0 auto 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; color: white; border: 3px solid var(--bg-secondary); overflow:hidden; background: linear-gradient(135deg, var(--primary-color), var(--accent-color));">
+                        <img id="adminSidebarAvatarImg" style="display:none; width:100%; height:100%; object-fit:cover;" />
+                        <div id="adminSidebarAvatarFallback" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center;">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div style="font-weight: 700; font-size: 16px; margin-bottom: 4px;">System Administrator</div>
+                    <div class="admin-badge" style="display: inline-block; margin-top: 8px;">FULL ACCESS</div>
+                    <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--bg-darker); display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                        <div>
+                            <div style="font-size: 24px; font-weight: 700; color: var(--primary-color);" id="systemUsers">0</div>
+                            <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Users</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 24px; font-weight: 700; color: var(--success-color);" id="systemCampaigns">0</div>
+                            <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Campaigns</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li><a href="admin-dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i> Control Center</a></li>
+                <li><a href="admin-users.html"><i class="fas fa-users-cog"></i> All Users</a></li>
+                <li><a href="admin-campaigns.html"><i class="fas fa-bullhorn"></i> All Campaigns</a></li>
+                <li><a href="admin-pledges.html"><i class="fas fa-hand-holding-usd"></i> All Pledges</a></li>
+                <li><a href="admin-messages.html"><i class="fas fa-comments"></i> Messages</a></li>
+                <li><a href="admin-categories.html"><i class="fas fa-tags"></i> Categories</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Admin Content -->
+        <div class="dashboard-content">
+            <div class="dashboard-header" style="margin-bottom: 24px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px;">
+                    <div>
+                        <h1 class="dashboard-title" style="font-size: 24px; margin-bottom: 4px;">
+                            <i class="fas fa-shield-alt" style="color: var(--primary-color); margin-right: 8px;"></i>
+                            Admin Dashboard
+                        </h1>
+                        <p style="color: var(--text-secondary); font-size: 14px; margin-top: 4px;">
+                            System overview, moderation, and analytics
+                        </p>
+                    </div>
+                    <div class="dashboard-header-actions">
+                        <button class="btn btn-secondary" onclick="refreshAllData()" style="padding: 8px 18px;">
+                            <i class="fas fa-sync-alt" style="margin-right: 6px;"></i> Refresh
+                        </button>
+                        <button class="btn btn-primary" onclick="exportSystemData()" style="padding: 8px 18px;">
+                            <i class="fas fa-download" style="margin-right: 6px;"></i> Export
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Statistics Cards -->
+            <div class="admin-stats-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-bottom: 32px;">
+                <div class="card admin-stat-card">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 16px;">
+                        <div>
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Total Revenue</div>
+                            <div style="font-size: 36px; font-weight: 700; color: var(--primary-color);" id="totalRevenue">$0</div>
+                        </div>
+                        <div style="font-size: 32px; color: var(--primary-color); opacity: 0.3;"><i class="fas fa-dollar-sign"></i></div>
+                    </div>
+                    <div class="stat-change" id="revenueChange">
+                        <i class="fas fa-arrow-up"></i>
+                        <span id="revenueChangeText">+0% from last month</span>
+                    </div>
+                </div>
+                
+                <div class="card admin-stat-card" style="border-left-color: var(--success-color);">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 16px;">
+                        <div>
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Active Campaigns</div>
+                            <div style="font-size: 36px; font-weight: 700; color: var(--success-color);" id="activeCampaigns">0</div>
+                        </div>
+                        <div style="font-size: 32px; color: var(--success-color); opacity: 0.3;"><i class="fas fa-rocket"></i></div>
+                    </div>
+                    <div class="stat-change" id="campaignsChange">
+                        <i class="fas fa-arrow-up"></i>
+                        <span id="campaignsChangeText">+0% from last month</span>
+                    </div>
+                </div>
+                
+                <div class="card admin-stat-card" style="border-left-color: var(--accent-color);">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 16px;">
+                        <div>
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Total Users</div>
+                            <div style="font-size: 36px; font-weight: 700; color: var(--accent-color);" id="totalUsers">0</div>
+                        </div>
+                        <div style="font-size: 32px; color: var(--accent-color); opacity: 0.3;"><i class="fas fa-users"></i></div>
+                    </div>
+                    <div style="font-size: 12px; color: var(--text-secondary);">
+                        <span id="activeDonors">0</span> active donors
+                    </div>
+                </div>
+                
+                <div class="card admin-stat-card" style="border-left-color: var(--warning-color);">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 16px;">
+                        <div>
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Pending</div>
+                            <div style="font-size: 36px; font-weight: 700; color: var(--warning-color);" id="pendingCampaigns">0</div>
+                        </div>
+                        <div style="font-size: 32px; color: var(--warning-color); opacity: 0.3;"><i class="fas fa-clock"></i></div>
+                    </div>
+                    <div style="font-size: 12px; color: var(--text-secondary);">
+                        Awaiting approval
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Statistics Row -->
+            <div class="admin-stats-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-bottom: 24px;">
+                <div class="card admin-stat-card" style="border-left-color: var(--primary-color);">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 16px;">
+                        <div>
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Transactions</div>
+                            <div style="font-size: 32px; font-weight: 700;" id="totalTransactions">0</div>
+                        </div>
+                        <div style="font-size: 24px; color: var(--primary-color); opacity: 0.3;"><i class="fas fa-exchange-alt"></i></div>
+                    </div>
+                    <div style="font-size: 12px; color: var(--text-secondary);">
+                        All system transactions
+                    </div>
+                </div>
+                
+                <div class="card admin-stat-card" style="border-left-color: var(--success-color);">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 16px;">
+                        <div>
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Avg Donation</div>
+                            <div style="font-size: 32px; font-weight: 700; color: var(--success-color);" id="averageDonation">$0</div>
+                        </div>
+                        <div style="font-size: 24px; color: var(--success-color); opacity: 0.3;"><i class="fas fa-chart-bar"></i></div>
+                    </div>
+                    <div style="font-size: 12px; color: var(--text-secondary);">
+                        Per transaction
+                    </div>
+                </div>
+                
+                <div class="card admin-stat-card" style="border-left-color: var(--accent-color);">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 16px;">
+                        <div>
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Total Campaigns</div>
+                            <div style="font-size: 32px; font-weight: 700; color: var(--accent-color);" id="totalCampaigns">0</div>
+                        </div>
+                        <div style="font-size: 24px; color: var(--accent-color); opacity: 0.3;"><i class="fas fa-bullhorn"></i></div>
+                    </div>
+                    <div style="font-size: 12px; color: var(--text-secondary);">
+                        All system campaigns
+                    </div>
+                </div>
+                
+                <div class="card admin-stat-card" style="border-left-color: var(--success-color);">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 16px;">
+                        <div>
+                            <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Donor Growth</div>
+                            <div style="font-size: 32px; font-weight: 700; color: var(--success-color);" id="donorGrowth">+0%</div>
+                        </div>
+                        <div style="font-size: 24px; color: var(--success-color); opacity: 0.3;"><i class="fas fa-user-plus"></i></div>
+                    </div>
+                    <div class="stat-change" id="donorGrowthChange">
+                        <i class="fas fa-arrow-up"></i>
+                        <span id="donorGrowthText">+0% from last month</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Methods Breakdown -->
+            <div class="card" style="margin-bottom: 24px;">
+                <div class="admin-card-header">
+                    <div>
+                        <h3 style="font-size: 18px; font-weight: 700; margin: 0 0 4px 0;">
+                            <i class="fas fa-credit-card" style="color: var(--primary-color); margin-right: 8px;"></i>
+                            Payment Methods Breakdown
+                        </h3>
+                        <p style="font-size: 13px; color: var(--text-secondary); margin: 0;">
+                            Share of successful transactions by payment method
+                        </p>
+                    </div>
+                </div>
+                <div style="padding: 24px;">
+                    <div class="payment-methods-layout">
+                        <div style="flex: 0 0 200px; display: flex; justify-content: center;">
+                            <div id="paymentMethodsChart" class="payment-methods-chart-circle"></div>
+                        </div>
+                        <div class="payment-methods-legend" id="paymentMethodsLegend">
+                            <!-- Legend items will be injected here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Financial Performance -->
+            <div class="card" style="margin-bottom: 32px;">
+                <div class="admin-card-header">
+                    <div>
+                        <h3 style="font-size: 18px; font-weight: 700; margin: 0 0 8px 0;">
+                            <i class="fas fa-chart-line" style="color: var(--primary-color); margin-right: 8px;"></i>
+                            System Financial Performance
+                        </h3>
+                        <p style="font-size: 14px; color: var(--text-secondary); margin: 0;">Monthly revenue trends across all campaigns</p>
+                    </div>
+                    <div style="display: flex; gap: 8px;">
+                        <button class="btn btn-secondary" id="chartPrev" style="padding: 8px 12px;"><i class="fas fa-chevron-left"></i></button>
+                        <button class="btn btn-secondary" id="chartNext" style="padding: 8px 12px;"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div id="chartContainer" style="display: flex; align-items: end; justify-content: space-around; gap: 8px; min-height: 250px; padding: 32px; border-top: 1px solid var(--bg-darker);">
+                    <!-- Chart will be rendered here -->
+                </div>
+            </div>
+
+            <!-- Analytics Section - Top Performers -->
+            <div class="admin-two-column-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 32px;">
+                <!-- Top Donors -->
+                <div class="card">
+                    <div class="admin-card-header">
+                        <h3 style="font-size: 18px; font-weight: 700; margin: 0; display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-trophy" style="color: var(--warning-color);"></i> Top Donors
+                        </h3>
+                        <span class="admin-badge">Top 10</span>
+                    </div>
+                    <div id="topDonorsContainer" style="max-height: 400px; overflow-y: auto; padding: 16px;">
+                        <!-- Top donors will be loaded here -->
+                    </div>
+                </div>
+
+                <!-- Top Campaigns -->
+                <div class="card">
+                    <div class="admin-card-header">
+                        <h3 style="font-size: 18px; font-weight: 700; margin: 0; display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-fire" style="color: var(--error-color);"></i> Top Campaigns
+                        </h3>
+                        <span class="admin-badge">Top 10</span>
+                    </div>
+                    <div id="topCampaignsContainer" style="max-height: 400px; overflow-y: auto; padding: 16px;">
+                        <!-- Top campaigns will be loaded here -->
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pending Campaigns Moderation -->
+            <div class="card" style="margin-bottom: 32px;">
+                <div class="admin-card-header">
+                    <h3 style="font-size: 18px; font-weight: 700; margin: 0;">
+                        <i class="fas fa-hourglass-half" style="color: var(--warning-color); margin-right: 8px;"></i>
+                        Pending Campaigns
+                    </h3>
+                    <a href="admin-campaigns.html" style="color: var(--primary-color); font-size: 12px; font-weight: 600;">View All →</a>
+                </div>
+                <div style="max-height: 400px; overflow-y: auto;">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Campaign</th>
+                                <th>Creator</th>
+                                <th>Goal</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="pendingCampaignsBody">
+                            <!-- Pending campaigns will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/pages/admin-dashboard.js"></script>
+</body>
+</html>

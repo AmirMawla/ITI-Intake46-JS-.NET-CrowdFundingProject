@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Categories</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin-pages.css">
+</head>
+<body class="admin-dashboard-page">
+    <!-- Admin Header -->
+    <header class="header admin-header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <div class="logo-icon" style="background: linear-gradient(135deg, var(--primary-color), var(--accent-color));">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <span style="font-weight: 700;">Admin</span>
+                </div>
+                <div class="nav-links">
+                    <a href="admin-dashboard.html"><i class="fas fa-tachometer-alt"></i> Control Center</a>
+                    <a href="admin-campaigns.html"><i class="fas fa-bullhorn"></i> Campaigns</a>
+                    <a href="admin-users.html"><i class="fas fa-users-cog"></i> Users</a>
+                    <a href="admin-pledges.html"><i class="fas fa-hand-holding-usd"></i> Pledges</a>
+                </div>
+                <div class="user-actions">
+                    <div class="user-profile" onclick="toggleUserMenu()" style="border: 2px solid var(--primary-color);">
+                        <img id="adminHeaderAvatarImg" style="display:none; width:100%; height:100%; object-fit:cover;" />
+                        <span id="adminInitial">A</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard">
+        <!-- Admin Sidebar -->
+        <div class="sidebar admin-sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="admin-dashboard.html"><i class="fas fa-tachometer-alt"></i> Control Center</a></li>
+                <li><a href="admin-users.html"><i class="fas fa-users-cog"></i> All Users</a></li>
+                <li><a href="admin-campaigns.html"><i class="fas fa-bullhorn"></i> All Campaigns</a></li>
+                <li><a href="admin-pledges.html"><i class="fas fa-hand-holding-usd"></i> All Pledges</a></li>
+                <li><a href="admin-messages.html"><i class="fas fa-comments"></i> Messages</a></li>
+                <li><a href="admin-categories.html" class="active"><i class="fas fa-tags"></i> Categories</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="dashboard-content">
+            <div class="dashboard-header" style="margin-bottom: 24px;">
+                <h1 class="dashboard-title" style="font-size: 24px;">
+                    <i class="fas fa-tags" style="color: var(--primary-color); margin-right: 8px;"></i>
+                    Categories
+                </h1>
+                <p style="color: var(--text-secondary); font-size: 14px; margin-top: 4px;">
+                    Manage campaign categories, create new ones, edit names, and delete unused categories.
+                </p>
+            </div>
+
+            <div class="card" style="padding: 0; overflow: hidden;">
+                <div class="admin-card-header" style="padding: 20px 24px;">
+                    <h3 style="font-size: 18px; font-weight: 700; margin: 0; display: flex; align-items: center; gap: 8px;">
+                        <i class="fas fa-list" style="color: var(--primary-color);"></i>
+                        Categories List
+                    </h3>
+                    <button class="btn btn-primary" onclick="createNewCategory()" style="padding: 10px 20px; border-radius: 8px; font-weight: 600; display: flex; align-items: center; gap: 8px; transition: all 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(0, 124, 255, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                        <i class="fas fa-plus"></i> Add Category
+                    </button>
+                </div>
+                <div style="padding: 0;">
+                    <div id="categoriesContainer" style="background: var(--bg-card);">
+                        <!-- Categories will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+    <!-- Reuse admin dashboard control logic -->
+    <script src="../js/pages/admin-dashboard.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            if (!requireAdmin() || !isAdmin()) {
+                return;
+            }
+            await loadAllCategories();
+        });
+    </script>
+</body>
+</html>

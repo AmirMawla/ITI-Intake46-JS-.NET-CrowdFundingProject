@@ -1,0 +1,1532 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-dal\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|solutionrelative:croudfund-dal\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-dal\\entities\\campaign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|solutionrelative:croudfund-dal\\entities\\campaign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\reposatories\\campaignrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\reposatories\\campaignrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\reposatories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\reposatories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\common\\requestfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\common\\requestfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-pl\\controllers\\pledgescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|solutionrelative:croudfund-pl\\controllers\\pledgescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\reposatories\\applicationuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\reposatories\\applicationuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\interfaces\\iapplicationuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\interfaces\\iapplicationuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-pl\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|solutionrelative:croudfund-pl\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\reviewdto\\reviewresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\reviewdto\\reviewresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\campaigndto\\campaignresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\campaigndto\\campaignresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\interfaces\\icampaignrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\interfaces\\icampaignrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-pl\\controllers\\campaignscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|solutionrelative:croudfund-pl\\controllers\\campaignscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-pl\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|solutionrelative:croudfund-pl\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\pledgedto\\topdonor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\pledgedto\\topdonor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\interfaces\\ipledgerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\interfaces\\ipledgerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\pledgedto\\topcampaign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\pledgedto\\topcampaign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/AmirMawla/CroudFund/True/SqlTable/dbo.Campaigns.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\errors\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\errors\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\abstractions\\resultextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\abstractions\\resultextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\authenticationdto\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\authenticationdto\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\userdto\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\userdto\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\pledgedto\\monthlytransactiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\pledgedto\\monthlytransactiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\pledgedto\\transactionstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\pledgedto\\transactionstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\pledgedto\\usertransactionsummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\pledgedto\\usertransactionsummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\pledgedto\\pledgerequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\pledgedto\\pledgerequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\abstractions\\paginatedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\abstractions\\paginatedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\pledgedto\\pledgeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\pledgedto\\pledgeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\pledgedto\\pledgerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\pledgedto\\pledgerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-pl\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|solutionrelative:croudfund-pl\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\reviewdto\\reviewrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\reviewdto\\reviewrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\reposatories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\reposatories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\categorydto\\categoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\categorydto\\categoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\categorydto\\categoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\categorydto\\categoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\userdto\\changeuserpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\userdto\\changeuserpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\userdto\\changeuserpasswordrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\userdto\\changeuserpasswordrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\authenticationdto\\registerrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\authenticationdto\\registerrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\authenticationdto\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\authenticationdto\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\authenticationdto\\refreshtokenrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\authenticationdto\\refreshtokenrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\authenticationdto\\refreshtokenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\authenticationdto\\refreshtokenrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\authenticationdto\\loginrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\authenticationdto\\loginrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\authenticationdto\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\authenticationdto\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\userdto\\updatevendorrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\userdto\\updatevendorrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\userdto\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\userdto\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-pl\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|solutionrelative:croudfund-pl\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\errors\\pledgeerrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\errors\\pledgeerrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\pledgedto\\campaigntransactionsummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\pledgedto\\campaigntransactionsummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-dal\\entities\\pledge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|solutionrelative:croudfund-dal\\entities\\pledge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-dal\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|solutionrelative:croudfund-dal\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\reviewdto\\reviewrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\reviewdto\\reviewrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\reposatories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\reposatories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\reposatories\\searchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\reposatories\\searchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\interfaces\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\interfaces\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\errors\\reviewerrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\errors\\reviewerrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-pl\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|solutionrelative:croudfund-pl\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-pl\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|solutionrelative:croudfund-pl\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\errors\\usererrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\errors\\usererrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-pl\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|solutionrelative:croudfund-pl\\controllers\\searchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\searchdto\\globalsearchresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\searchdto\\globalsearchresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\interfaces\\isearchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\interfaces\\isearchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-dal\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|solutionrelative:croudfund-dal\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\categorydto\\categoryrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\categorydto\\categoryrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\errors\\categoryerrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\errors\\categoryerrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-dal\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|solutionrelative:croudfund-dal\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\dtos\\campaigndto\\updatecampaignrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\dtos\\campaigndto\\updatecampaignrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\interfaces\\iauthrepositry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\interfaces\\iauthrepositry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Migrations\\20260122165644_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CroudFund-DAL\\Migrations\\20260122165644_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|solutionrelative:croudfund-pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-dal\\entities\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|solutionrelative:croudfund-dal\\entities\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\mapping\\mappingconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\mapping\\mappingconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\authentication\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\authentication\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\authentication\\ijwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\authentication\\ijwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-dal\\data\\configurations\\pledgeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|solutionrelative:croudfund-dal\\data\\configurations\\pledgeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-dal\\data\\configurations\\reviewconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|solutionrelative:croudfund-dal\\data\\configurations\\reviewconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-dal\\data\\configurations\\paymentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|solutionrelative:croudfund-dal\\data\\configurations\\paymentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-dal\\data\\configurations\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|solutionrelative:croudfund-dal\\data\\configurations\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-dal\\data\\configurations\\applicationuserconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|solutionrelative:croudfund-dal\\data\\configurations\\applicationuserconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-dal\\data\\configurations\\campaignconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|solutionrelative:croudfund-dal\\data\\configurations\\campaignconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-dal\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|solutionrelative:croudfund-dal\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\errors\\checkouterrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\errors\\checkouterrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\authentication\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\authentication\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\abstractions\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\abstractions\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\abstractions\\notificationmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\abstractions\\notificationmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-bll\\abstractions\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C3D3763-3ED0-E2F4-8795-A8905F76E5CC}|CroudFund-BLL\\CroudFund-BLL.csproj|solutionrelative:croudfund-bll\\abstractions\\error.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-pl\\swagger\\configureswaggeroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|solutionrelative:croudfund-pl\\swagger\\configureswaggeroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-pl\\croudfund-pl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{048B2848-3B5A-14EB-9E2C-9674DF0CB20B}|CroudFund-PL\\CroudFund-PL.csproj|solutionrelative:croudfund-pl\\croudfund-pl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\amirm\\AppData\\Roaming\\Microsoft\\UserSecrets\\3140f05c-89d3-4ec7-9bec-cf68a8a10083\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Migrations\\20260121025926_first migration .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CroudFund-DAL\\Migrations\\20260121025926_first migration .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Migrations\\20260121025332_first migration .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CroudFund-DAL\\Migrations\\20260121025332_first migration .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|d:\\amir\\data\\programing\\my projects\\croudfundproject\\croudfund-back\\croudfund-dal\\migrations\\20260123035123_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C29214-6B93-2599-B988-151A3D60A5A4}|CroudFund-DAL\\CroudFund-DAL.csproj|solutionrelative:croudfund-dal\\migrations\\20260123035123_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "GlobalSearchResponse.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\SearchDto\\GlobalSearchResponse.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\SearchDto\\GlobalSearchResponse.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\SearchDto\\GlobalSearchResponse.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\SearchDto\\GlobalSearchResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T18:25:03.258Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CampaignRepository.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Reposatories\\CampaignRepository.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Reposatories\\CampaignRepository.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Reposatories\\CampaignRepository.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Reposatories\\CampaignRepository.cs",
+              "ViewState": "AgIAAOEBAAAAAAAAAAAwwBkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T21:06:41.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Data\\SeedData.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Data\\SeedData.cs",
+              "RelativeToolTip": "CroudFund-DAL\\Data\\SeedData.cs",
+              "ViewState": "AgIAANwAAAAAAAAAAAAmwIsBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T03:42:59.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PledgesController.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Controllers\\PledgesController.cs",
+              "RelativeDocumentMoniker": "CroudFund-PL\\Controllers\\PledgesController.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Controllers\\PledgesController.cs",
+              "RelativeToolTip": "CroudFund-PL\\Controllers\\PledgesController.cs",
+              "ViewState": "AgIAANoAAAAAAAAAAAAqwOgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T20:43:40.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReviewResponse.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\ReviewDto\\ReviewResponse.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\ReviewDto\\ReviewResponse.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\ReviewDto\\ReviewResponse.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\ReviewDto\\ReviewResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T23:15:32.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CampaignResponse.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\CampaignDto\\CampaignResponse.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\CampaignDto\\CampaignResponse.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\CampaignDto\\CampaignResponse.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\CampaignDto\\CampaignResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T13:52:28.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RequestFilter.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\Common\\RequestFilter.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\Common\\RequestFilter.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\Common\\RequestFilter.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\Common\\RequestFilter.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T13:54:52.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Campaign.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Entities\\Campaign.cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Entities\\Campaign.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Entities\\Campaign.cs",
+              "RelativeToolTip": "CroudFund-DAL\\Entities\\Campaign.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T02:41:07.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "CroudFund-PL\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "CroudFund-PL\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwEYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T13:16:39.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Reposatories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Reposatories\\CategoryRepository.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Reposatories\\CategoryRepository.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Reposatories\\CategoryRepository.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAIAwwFUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T17:10:30.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationUserRepository.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Reposatories\\ApplicationUserRepository.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Reposatories\\ApplicationUserRepository.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Reposatories\\ApplicationUserRepository.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Reposatories\\ApplicationUserRepository.cs",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAIwBABAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T02:44:59.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IApplicationUserRepository.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\IApplicationUserRepository.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Interfaces\\IApplicationUserRepository.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\IApplicationUserRepository.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Interfaces\\IApplicationUserRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvxEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T19:49:13.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ICampaignRepository.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\ICampaignRepository.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Interfaces\\ICampaignRepository.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\ICampaignRepository.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Interfaces\\ICampaignRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAhwA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T22:38:42.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CampaignsController.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Controllers\\CampaignsController.cs",
+              "RelativeDocumentMoniker": "CroudFund-PL\\Controllers\\CampaignsController.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Controllers\\CampaignsController.cs",
+              "RelativeToolTip": "CroudFund-PL\\Controllers\\CampaignsController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwDIAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T02:03:21.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "CroudFund-PL\\Controllers\\CategoriesController.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "CroudFund-PL\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T17:20:06.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TopDonor.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\TopDonor.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\PledgeDto\\TopDonor.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\TopDonor.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\PledgeDto\\TopDonor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T01:05:09.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IPledgeRepository.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\IPledgeRepository.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Interfaces\\IPledgeRepository.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\IPledgeRepository.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Interfaces\\IPledgeRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAIAzwBwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T19:38:24.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TopCampaign.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\TopCampaign.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\PledgeDto\\TopCampaign.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\TopCampaign.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\PledgeDto\\TopCampaign.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T20:13:57.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "dbo.Campaigns.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/AmirMawla/CroudFund/True/SqlTable/dbo.Campaigns.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/AmirMawla/CroudFund/True/SqlTable/dbo.Campaigns.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-01-24T17:09:54.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ResultExtensions.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Abstractions\\ResultExtensions.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Abstractions\\ResultExtensions.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Abstractions\\ResultExtensions.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Abstractions\\ResultExtensions.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:41:10.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AuthResponse.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\AuthenticationDto\\AuthResponse.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\AuthenticationDto\\AuthResponse.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\AuthenticationDto\\AuthResponse.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\AuthenticationDto\\AuthResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:48:17.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserResponse.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\UserDto\\UserResponse.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\UserDto\\UserResponse.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\UserDto\\UserResponse.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\UserDto\\UserResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:32:47.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MonthlyTransactionData.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\MonthlyTransactionData.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\PledgeDto\\MonthlyTransactionData.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\MonthlyTransactionData.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\PledgeDto\\MonthlyTransactionData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T01:04:16.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GlobalExceptionHandler.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Errors\\GlobalExceptionHandler.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Errors\\GlobalExceptionHandler.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Errors\\GlobalExceptionHandler.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Errors\\GlobalExceptionHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:58:32.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TransactionStatistics.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\TransactionStatistics.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\PledgeDto\\TransactionStatistics.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\TransactionStatistics.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\PledgeDto\\TransactionStatistics.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T01:03:33.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserTransactionSummary.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\UserTransactionSummary.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\PledgeDto\\UserTransactionSummary.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\UserTransactionSummary.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\PledgeDto\\UserTransactionSummary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T01:02:51.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PledgeRequestValidator.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\PledgeRequestValidator.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\PledgeDto\\PledgeRequestValidator.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\PledgeRequestValidator.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\PledgeDto\\PledgeRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T19:55:13.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PaginatedList.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Abstractions\\PaginatedList.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Abstractions\\PaginatedList.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Abstractions\\PaginatedList.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Abstractions\\PaginatedList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T13:55:05.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PledgeResponse.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\PledgeResponse.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\PledgeDto\\PledgeResponse.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\PledgeResponse.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\PledgeDto\\PledgeResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T13:49:04.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "CroudFund-PL\\Controllers\\ReviewsController.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "CroudFund-PL\\Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAswGYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T00:08:39.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ReviewRequest.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\ReviewDto\\ReviewRequest.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\ReviewDto\\ReviewRequest.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\ReviewDto\\ReviewRequest.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\ReviewDto\\ReviewRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T23:17:03.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ReviewRepository.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Reposatories\\ReviewRepository.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Reposatories\\ReviewRepository.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Reposatories\\ReviewRepository.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Reposatories\\ReviewRepository.cs",
+              "ViewState": "AgIAAD0BAAAAAAAAAIAwwIsBAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T23:50:06.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "PledgeRequest.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\PledgeRequest.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\PledgeDto\\PledgeRequest.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\PledgeRequest.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\PledgeDto\\PledgeRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T19:49:31.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CategoryRequest.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\CategoryDto\\CategoryRequest.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\CategoryDto\\CategoryRequest.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\CategoryDto\\CategoryRequest.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\CategoryDto\\CategoryRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T17:05:50.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CategoryResponse.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\CategoryDto\\CategoryResponse.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\CategoryDto\\CategoryResponse.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\CategoryDto\\CategoryResponse.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\CategoryDto\\CategoryResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T17:05:10.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ChangeUserPasswordRequest.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\UserDto\\ChangeUserPasswordRequest.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\UserDto\\ChangeUserPasswordRequest.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\UserDto\\ChangeUserPasswordRequest.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\UserDto\\ChangeUserPasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T03:12:56.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ChangeUserPasswordRequestValidator.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\UserDto\\ChangeUserPasswordRequestValidator.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\UserDto\\ChangeUserPasswordRequestValidator.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\UserDto\\ChangeUserPasswordRequestValidator.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\UserDto\\ChangeUserPasswordRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T02:50:27.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "RegisterRequestValidator.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\AuthenticationDto\\RegisterRequestValidator.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\AuthenticationDto\\RegisterRequestValidator.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\AuthenticationDto\\RegisterRequestValidator.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\AuthenticationDto\\RegisterRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T19:39:50.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\AuthenticationDto\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\AuthenticationDto\\RegisterRequest.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\AuthenticationDto\\RegisterRequest.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\AuthenticationDto\\RegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:52:13.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "RefreshTokenRequestValidator.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\AuthenticationDto\\RefreshTokenRequestValidator.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\AuthenticationDto\\RefreshTokenRequestValidator.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\AuthenticationDto\\RefreshTokenRequestValidator.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\AuthenticationDto\\RefreshTokenRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:52:08.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "RefreshTokenRequest.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\AuthenticationDto\\RefreshTokenRequest.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\AuthenticationDto\\RefreshTokenRequest.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\AuthenticationDto\\RefreshTokenRequest.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\AuthenticationDto\\RefreshTokenRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:52:02.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "LogInRequestValidator.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\AuthenticationDto\\LogInRequestValidator.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\AuthenticationDto\\LogInRequestValidator.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\AuthenticationDto\\LogInRequestValidator.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\AuthenticationDto\\LogInRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:51:56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "LogInRequest.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\AuthenticationDto\\LogInRequest.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\AuthenticationDto\\LogInRequest.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\AuthenticationDto\\LogInRequest.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\AuthenticationDto\\LogInRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:48:26.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UpdateVendorRequestValidator.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\UserDto\\UpdateVendorRequestValidator.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\UserDto\\UpdateVendorRequestValidator.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\UserDto\\UpdateVendorRequestValidator.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\UserDto\\UpdateVendorRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T19:40:07.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "UpdateUserRequest.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\UserDto\\UpdateUserRequest.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\UserDto\\UpdateUserRequest.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\UserDto\\UpdateUserRequest.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\UserDto\\UpdateUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T02:46:58.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "CroudFund-PL\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "CroudFund-PL\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAASwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:30:53.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "PledgeErrors.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Errors\\PledgeErrors.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Errors\\PledgeErrors.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Errors\\PledgeErrors.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Errors\\PledgeErrors.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAACRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T01:06:39.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "CampaignTransactionSummary.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\CampaignTransactionSummary.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\PledgeDto\\CampaignTransactionSummary.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\PledgeDto\\CampaignTransactionSummary.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\PledgeDto\\CampaignTransactionSummary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T01:04:43.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ReviewRequestValidator.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\ReviewDto\\ReviewRequestValidator.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\ReviewDto\\ReviewRequestValidator.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\ReviewDto\\ReviewRequestValidator.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\ReviewDto\\ReviewRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T23:18:08.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Review.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Entities\\Review.cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Entities\\Review.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Entities\\Review.cs",
+              "RelativeToolTip": "CroudFund-DAL\\Entities\\Review.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T01:43:38.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Pledge.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Entities\\Pledge.cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Entities\\Pledge.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Entities\\Pledge.cs",
+              "RelativeToolTip": "CroudFund-DAL\\Entities\\Pledge.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:05:54.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Reposatories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Reposatories\\UnitOfWork.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Reposatories\\UnitOfWork.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Reposatories\\UnitOfWork.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAA2wBQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T22:01:53.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "SearchRepository.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Reposatories\\SearchRepository.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Reposatories\\SearchRepository.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Reposatories\\SearchRepository.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Reposatories\\SearchRepository.cs",
+              "ViewState": "AgIAAPcAAAAAAAAAAAAQwPQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T22:33:39.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "IReviewRepository.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\IReviewRepository.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Interfaces\\IReviewRepository.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\IReviewRepository.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Interfaces\\IReviewRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T23:20:53.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T22:27:30.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ReviewErrors.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Errors\\ReviewErrors.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Errors\\ReviewErrors.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Errors\\ReviewErrors.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Errors\\ReviewErrors.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAACGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:58:37.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\appsettings.json",
+              "RelativeDocumentMoniker": "CroudFund-PL\\appsettings.json",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\appsettings.json",
+              "RelativeToolTip": "CroudFund-PL\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-23T21:34:13.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "CroudFund-PL\\DependencyInjection.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\DependencyInjection.cs",
+              "RelativeToolTip": "CroudFund-PL\\DependencyInjection.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAnwEUAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T21:01:54.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "UserErrors.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Errors\\UserErrors.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Errors\\UserErrors.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Errors\\UserErrors.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Errors\\UserErrors.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T22:36:06.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Entities\\Category.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Entities\\Category.cs",
+              "RelativeToolTip": "CroudFund-DAL\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T01:27:18.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ISearchRepository.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\ISearchRepository.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Interfaces\\ISearchRepository.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\ISearchRepository.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Interfaces\\ISearchRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:37:18.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "SearchController.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Controllers\\SearchController.cs",
+              "RelativeDocumentMoniker": "CroudFund-PL\\Controllers\\SearchController.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Controllers\\SearchController.cs",
+              "RelativeToolTip": "CroudFund-PL\\Controllers\\SearchController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T02:50:45.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Interfaces\\ICategoryRepository.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\ICategoryRepository.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Interfaces\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T17:08:15.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "CategoryRequestValidator.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\CategoryDto\\CategoryRequestValidator.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\CategoryDto\\CategoryRequestValidator.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\CategoryDto\\CategoryRequestValidator.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\CategoryDto\\CategoryRequestValidator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T17:06:33.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "CategoryErrors.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Errors\\CategoryErrors.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Errors\\CategoryErrors.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Errors\\CategoryErrors.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Errors\\CategoryErrors.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:58:19.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "20260123035123_firstmigration.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Migrations\\20260123035123_firstmigration.cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Migrations\\20260123035123_firstmigration.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Migrations\\20260123035123_firstmigration.cs",
+              "RelativeToolTip": "CroudFund-DAL\\Migrations\\20260123035123_firstmigration.cs",
+              "ViewState": "AgIAAAkBAAAAAAAAAAAQwBoBAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T03:51:23.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Entities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Entities\\ApplicationUser.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Entities\\ApplicationUser.cs",
+              "RelativeToolTip": "CroudFund-DAL\\Entities\\ApplicationUser.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwA4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T00:43:50.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "UpdateCampaignRequestValidator.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\CampaignDto\\UpdateCampaignRequestValidator.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Dtos\\CampaignDto\\UpdateCampaignRequestValidator.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Dtos\\CampaignDto\\UpdateCampaignRequestValidator.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Dtos\\CampaignDto\\UpdateCampaignRequestValidator.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T22:30:58.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "IAuthRepositry.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\IAuthRepositry.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Interfaces\\IAuthRepositry.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\IAuthRepositry.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Interfaces\\IAuthRepositry.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:59:36.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "20260122165644_firstmigration.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Migrations\\20260122165644_firstmigration.cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Migrations\\20260122165644_firstmigration.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Migrations\\20260122165644_firstmigration.cs",
+              "RelativeToolTip": "CroudFund-DAL\\Migrations\\20260122165644_firstmigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T16:56:44.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Entities\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Entities\\RefreshToken.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Entities\\RefreshToken.cs",
+              "RelativeToolTip": "CroudFund-DAL\\Entities\\RefreshToken.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T01:38:26.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Program.cs",
+              "RelativeDocumentMoniker": "CroudFund-PL\\Program.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Program.cs",
+              "RelativeToolTip": "CroudFund-PL\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T21:30:27.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "IBaseRepository.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\IBaseRepository.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Interfaces\\IBaseRepository.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Interfaces\\IBaseRepository.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Interfaces\\IBaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:59:56.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "MappingConfigurations.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Mapping\\MappingConfigurations.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Mapping\\MappingConfigurations.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Mapping\\MappingConfigurations.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Mapping\\MappingConfigurations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T22:26:26.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "JwtProvider.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Authentication\\JwtProvider.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Authentication\\JwtProvider.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Authentication\\JwtProvider.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Authentication\\JwtProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T02:37:46.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "IJwtProvider.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Authentication\\IJwtProvider.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Authentication\\IJwtProvider.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Authentication\\IJwtProvider.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Authentication\\IJwtProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T02:36:29.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "PledgeConfiguration.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Data\\Configurations\\PledgeConfiguration.cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Data\\Configurations\\PledgeConfiguration.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Data\\Configurations\\PledgeConfiguration.cs",
+              "RelativeToolTip": "CroudFund-DAL\\Data\\Configurations\\PledgeConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T02:30:11.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "ReviewConfiguration.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Data\\Configurations\\ReviewConfiguration.cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Data\\Configurations\\ReviewConfiguration.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Data\\Configurations\\ReviewConfiguration.cs",
+              "RelativeToolTip": "CroudFund-DAL\\Data\\Configurations\\ReviewConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T02:10:36.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "PaymentConfiguration.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Data\\Configurations\\PaymentConfiguration.cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Data\\Configurations\\PaymentConfiguration.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Data\\Configurations\\PaymentConfiguration.cs",
+              "RelativeToolTip": "CroudFund-DAL\\Data\\Configurations\\PaymentConfiguration.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T02:00:00.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "CategoryConfiguration.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Data\\Configurations\\CategoryConfiguration.cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Data\\Configurations\\CategoryConfiguration.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Data\\Configurations\\CategoryConfiguration.cs",
+              "RelativeToolTip": "CroudFund-DAL\\Data\\Configurations\\CategoryConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T02:24:17.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "ApplicationUserConfiguration.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Data\\Configurations\\ApplicationUserConfiguration.cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Data\\Configurations\\ApplicationUserConfiguration.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Data\\Configurations\\ApplicationUserConfiguration.cs",
+              "RelativeToolTip": "CroudFund-DAL\\Data\\Configurations\\ApplicationUserConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T01:55:19.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "CampaignConfiguration.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Data\\Configurations\\CampaignConfiguration.cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Data\\Configurations\\CampaignConfiguration.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Data\\Configurations\\CampaignConfiguration.cs",
+              "RelativeToolTip": "CroudFund-DAL\\Data\\Configurations\\CampaignConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T02:03:25.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "CroudFund-DAL\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T00:46:05.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "CheckOutErrors.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Errors\\CheckOutErrors.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Errors\\CheckOutErrors.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Errors\\CheckOutErrors.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Errors\\CheckOutErrors.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:58:26.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "JwtOptions.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Authentication\\JwtOptions.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Authentication\\JwtOptions.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Authentication\\JwtOptions.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Authentication\\JwtOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:47:45.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "Result.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Abstractions\\Result.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Abstractions\\Result.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Abstractions\\Result.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Abstractions\\Result.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:47:17.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "NotificationMessage.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Abstractions\\NotificationMessage.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Abstractions\\NotificationMessage.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Abstractions\\NotificationMessage.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Abstractions\\NotificationMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T14:46:56.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "Error.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Abstractions\\Error.cs",
+              "RelativeDocumentMoniker": "CroudFund-BLL\\Abstractions\\Error.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-BLL\\Abstractions\\Error.cs",
+              "RelativeToolTip": "CroudFund-BLL\\Abstractions\\Error.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T12:39:13.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "CroudFund-PL.csproj",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\CroudFund-PL.csproj",
+              "RelativeDocumentMoniker": "CroudFund-PL\\CroudFund-PL.csproj",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\CroudFund-PL.csproj",
+              "RelativeToolTip": "CroudFund-PL\\CroudFund-PL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-21T20:55:06.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "ConfigureSwaggerOptions.cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Swagger\\ConfigureSwaggerOptions.cs",
+              "RelativeDocumentMoniker": "CroudFund-PL\\Swagger\\ConfigureSwaggerOptions.cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-PL\\Swagger\\ConfigureSwaggerOptions.cs",
+              "RelativeToolTip": "CroudFund-PL\\Swagger\\ConfigureSwaggerOptions.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T21:45:05.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\amirm\\AppData\\Roaming\\Microsoft\\UserSecrets\\3140f05c-89d3-4ec7-9bec-cf68a8a10083\\secrets.json",
+              "ToolTip": "C:\\Users\\amirm\\AppData\\Roaming\\Microsoft\\UserSecrets\\3140f05c-89d3-4ec7-9bec-cf68a8a10083\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-20T20:50:07.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "20260121025926_first migration .cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Migrations\\20260121025926_first migration .cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Migrations\\20260121025926_first migration .cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Migrations\\20260121025926_first migration .cs",
+              "RelativeToolTip": "CroudFund-DAL\\Migrations\\20260121025926_first migration .cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T02:59:26.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "20260121025332_first migration .cs",
+              "DocumentMoniker": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Migrations\\20260121025332_first migration .cs",
+              "RelativeDocumentMoniker": "CroudFund-DAL\\Migrations\\20260121025332_first migration .cs",
+              "ToolTip": "D:\\amir\\data\\programing\\my projects\\CroudFundProject\\CroudFund-Back\\CroudFund-DAL\\Migrations\\20260121025332_first migration .cs",
+              "RelativeToolTip": "CroudFund-DAL\\Migrations\\20260121025332_first migration .cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T02:53:33.099Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 142,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

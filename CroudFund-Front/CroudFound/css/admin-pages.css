@@ -1,0 +1,255 @@
+
+
+/* Improved Admin Table */
+.admin-table-improved {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.admin-table-improved thead {
+    background: var(--bg-darker);
+}
+
+.admin-table-improved th {
+    padding: 16px 24px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
+    border-bottom: 2px solid var(--border-color);
+    white-space: nowrap;
+}
+
+.admin-table-improved td {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--bg-card);
+    transition: background-color 0.2s ease;
+}
+
+.admin-table-row:hover td {
+    background: var(--bg-card-hover);
+}
+
+.admin-table-improved tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Improved Status Badges */
+.status-badge-improved {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.status-active-improved {
+    background: rgba(16, 182, 21, 0.15);
+    color: var(--success-color);
+    border: 1px solid rgba(16, 182, 21, 0.3);
+}
+
+.status-draft-improved,
+.status-pending-improved {
+    background: rgba(107, 114, 128, 0.15);
+    color: var(--text-muted);
+    border: 1px solid rgba(107, 114, 128, 0.3);
+}
+
+.status-completed-improved {
+    background: rgba(0, 124, 255, 0.15);
+    color: var(--primary-color);
+    border: 1px solid rgba(0, 124, 255, 0.3);
+}
+
+/* Improved Action Buttons */
+.btn-action-delete {
+    padding: 8px 12px;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 6px;
+    color: var(--error-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.btn-action-delete:hover {
+    background: rgba(239, 68, 68, 0.2);
+    border-color: var(--error-color);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.2);
+}
+
+.btn-action-view {
+    padding: 8px 12px;
+    background: rgba(0, 124, 255, 0.1);
+    border: 1px solid rgba(0, 124, 255, 0.3);
+    border-radius: 6px;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.btn-action-view:hover {
+    background: rgba(0, 124, 255, 0.2);
+    border-color: var(--primary-color);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 124, 255, 0.2);
+}
+
+.btn-action-approve {
+    padding: 8px 12px;
+    background: rgba(16, 182, 21, 0.1);
+    border: 1px solid rgba(16, 182, 21, 0.3);
+    border-radius: 6px;
+    color: var(--success-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.btn-action-approve:hover {
+    background: rgba(16, 182, 21, 0.2);
+    border-color: var(--success-color);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(16, 182, 21, 0.2);
+}
+
+.btn-action-approve:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-action-approve:disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Improved Input Focus States */
+input:focus,
+select:focus {
+    outline: none;
+}
+
+/* Improved Card Header */
+.admin-card-header {
+    background: var(--bg-darker);
+    padding: 20px 24px;
+    border-bottom: 2px solid var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Improved table row hover effect */
+.admin-table-row {
+    transition: background-color 0.2s ease;
+}
+
+.admin-table-row:hover {
+    background-color: var(--bg-card-hover) !important;
+}
+
+/* Improved card styling */
+.card[style*="padding: 0"] {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Better input and select styling */
+input[type="text"],
+input[type="date"],
+select {
+    transition: all 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 3px rgba(0, 124, 255, 0.1) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .admin-table-improved th,
+    .admin-table-improved td {
+        padding: 12px 16px;
+        font-size: 13px;
+    }
+    
+    /* Stack filters on smaller screens */
+    div[style*="grid-template-columns: repeat(auto-fit"] {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-table-improved {
+        font-size: 12px;
+    }
+    
+    .admin-table-improved th,
+    .admin-table-improved td {
+        padding: 10px 12px;
+    }
+    
+    /* Make search bar full width on mobile */
+    div[style*="display: flex; align-items: center; gap: 16px; margin-bottom: 16px"] {
+        flex-direction: column;
+    }
+    
+    div[style*="flex: 1; position: relative"] {
+        width: 100%;
+    }
+
+    /* Make admin headers and page titles wrap nicely */
+    .admin-card-header {
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    /* Reduce heavy padding on very small screens */
+    .admin-table-improved th,
+    .admin-table-improved td {
+        padding: 10px 12px;
+    }
+
+    /* Tables should scroll instead of breaking layout */
+    .admin-table-improved {
+        min-width: 720px;
+    }
+}
+
+/* Extra small */
+@media (max-width: 480px) {
+    .admin-table-improved th,
+    .admin-table-improved td {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+}

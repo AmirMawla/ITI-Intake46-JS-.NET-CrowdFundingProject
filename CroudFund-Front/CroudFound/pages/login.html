@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Crowdfund</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .login-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 100vh;
+        }
+        @media (max-width: 768px) {
+            .login-container {
+                grid-template-columns: 1fr;
+            }
+            .login-left {
+                display: none;
+            }
+            .login-right {
+                padding: 40px 20px;
+            }
+        }
+        .login-left {
+            background: linear-gradient(135deg, rgba(0, 124, 255, 0.9), rgba(16, 182, 21, 0.8));
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .login-left::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23ffffff" fill-opacity="0.1" width="1200" height="800"/></svg>');
+            opacity: 0.3;
+        }
+        .login-left-content {
+            position: relative;
+            z-index: 1;
+        }
+        .login-right {
+            background-color: var(--bg-dark);
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .login-form-container {
+            max-width: 450px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .login-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 32px;
+        }
+        .login-tab {
+            flex: 1;
+            padding: 12px;
+            background-color: var(--bg-card);
+            border: none;
+            border-radius: 8px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .login-tab.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .social-login {
+            display: flex;
+            gap: 12px;
+            margin-top: 24px;
+        }
+        .social-btn {
+            flex: 1;
+            padding: 12px 24px;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--text-primary);
+            font-size: 14px;
+            font-weight: 500;
+            min-height: 44px;
+        }
+        .social-btn:hover {
+            border-color: var(--primary-color);
+            background-color: var(--bg-card-hover);
+            transform: translateY(-2px);
+        }
+        .social-btn i {
+            font-size: 18px;
+            color: var(--primary-color);
+        }
+        .social-btn:hover i {
+            color: var(--primary-light);
+        }
+        .password-toggle {
+            position: relative;
+        }
+        .password-toggle-icon {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Left Side - Promotional -->
+        <div class="login-left">
+            <div class="login-left-content">
+                <div class="logo" style="margin-bottom: 40px;">
+                    <div class="logo-icon">C</div>
+                    <span style="color: white;">Crowdfund</span>
+                </div>
+                <h1 style="font-size: 48px; font-weight: 700; margin-bottom: 24px; color: white;">Empowering ideas through community support.</h1>
+                <p style="font-size: 18px; margin-bottom: 32px; color: rgba(255, 255, 255, 0.9);">Join over 1 million people funding campaigns that matter. From local gardens to global tech innovations.</p>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="display: flex; gap: -8px;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255, 255, 255, 0.3); border: 2px solid white; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-user" style="color: white;"></i>
+                            </div>
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255, 255, 255, 0.3); border: 2px solid white; margin-left: -12px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-user" style="color: white;"></i>
+                            </div>
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255, 255, 255, 0.3); border: 2px solid white; margin-left: -12px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-user" style="color: white;"></i>
+                            </div>
+                        </div>
+                        <span style="color: white; font-size: 14px;"><i class="fas fa-arrow-up"></i> 2.4k members joined today</span>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Right Side - Login Form -->
+        <div class="login-right">
+            <div class="login-form-container">
+                <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 8px;">Welcome Back</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 32px;">Enter your details to access your account and manage your campaigns.</p>
+                
+                <div class="login-tabs">
+                    <button class="login-tab active" id="loginTab" onclick="switchTab('login')">Log In</button>
+                    <button class="login-tab" id="registerTab" onclick="switchTab('register')">Sign Up</button>
+                </div>
+
+                <!-- Login Form -->
+                <form id="loginForm" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-input" placeholder="name@company.com" required id="loginEmail">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" style="display: flex; justify-content: space-between;">
+                            <span>Password</span>
+                            <a href="#" style="color: var(--primary-color); font-size: 14px;">Forgot password?</a>
+                        </label>
+                        <div class="password-toggle">
+                            <input type="password" class="form-input" placeholder="Enter your password" required id="loginPassword">
+                            <span class="password-toggle-icon" onclick="togglePassword('loginPassword')"><i class="fas fa-eye"></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group" style="display: flex; align-items: center; gap: 8px;">
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe" style="color: var(--text-secondary); cursor: pointer;">Remember me for 30 days</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-bottom: 24px;">Log In</button>
+                </form>
+
+                <!-- Register Form -->
+                <form id="registerForm" onsubmit="handleRegister(event)" style="display: none;">
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-input" placeholder="John Doe" required id="registerName">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-input" placeholder="name@company.com" required id="registerEmail">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Password</label>
+                        <div class="password-toggle">
+                            <input type="password" class="form-input" placeholder="Create a password" required id="registerPassword" minlength="8">
+                            <span class="password-toggle-icon" onclick="togglePassword('registerPassword')"><i class="fas fa-eye"></i></span>
+                        </div>
+                        <small style="color: var(--text-muted); font-size: 12px; margin-top: 4px; display: block;">Minimum 8 characters</small>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Confirm Password</label>
+                        <div class="password-toggle">
+                            <input type="password" class="form-input" placeholder="Confirm your password" required id="registerPasswordConfirm">
+                            <span class="password-toggle-icon" onclick="togglePassword('registerPasswordConfirm')"><i class="fas fa-eye"></i></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-bottom: 24px;">Sign Up</button>
+                </form>
+
+                <div style="display: flex; align-items: center; gap: 16px; margin: 24px 0;">
+                    <div style="flex: 1; height: 1px; background: var(--border-color);"></div>
+                    <span style="color: var(--text-muted); font-size: 14px;">OR CONTINUE WITH</span>
+                    <div style="flex: 1; height: 1px; background: var(--border-color);"></div>
+                </div>
+
+                <div class="social-login">
+                    <button class="social-btn" type="button">
+                        <i class="fab fa-google"></i>
+                        <span>Google</span>
+                    </button>
+                    <button class="social-btn" type="button">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </button>
+                </div>
+
+                <p style="text-align: center; margin-top: 32px; color: var(--text-muted); font-size: 14px;">
+                    By continuing, you agree to Crowdfund's 
+                    <a href="#" style="color: var(--primary-color);">Terms of Service</a> and 
+                    <a href="#" style="color: var(--primary-color);">Privacy Policy</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+    <script>
+        function switchTab(tab) {
+            const loginTab = document.getElementById('loginTab');
+            const registerTab = document.getElementById('registerTab');
+            const loginForm = document.getElementById('loginForm');
+            const registerForm = document.getElementById('registerForm');
+            
+            if (tab === 'login') {
+                loginTab.classList.add('active');
+                registerTab.classList.remove('active');
+                loginForm.style.display = 'block';
+                registerForm.style.display = 'none';
+            } else {
+                registerTab.classList.add('active');
+                loginTab.classList.remove('active');
+                registerForm.style.display = 'block';
+                loginForm.style.display = 'none';
+            }
+        }
+
+        function togglePassword(inputId) {
+            const input = document.getElementById(inputId);
+            input.type = input.type === 'password' ? 'text' : 'password';
+        }
+
+        async function handleLogin(event) {
+            event.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            
+            // Validate inputs
+            if (!email || !password) {
+                showNotification('Please enter both email and password.', 'error');
+                return;
+            }
+            
+            if (!isValidEmail(email)) {
+                showNotification('Please enter a valid email address.', 'error');
+                return;
+            }
+            
+            try {
+                // Check if required functions are available
+                if (typeof login === 'undefined') {
+                    console.error('login function is not defined. Check if auth.js is loaded.');
+                    showNotification('System error: Login function not available. Please refresh the page.', 'error');
+                    return;
+                }
+                
+                await login(email, password);
+                showNotification('Login successful!', 'success');
+                setTimeout(() => {
+                    const user = getCurrentUser();
+                    if (user && user.role === 'Admin') {
+                        redirectTo('../pages/admin-dashboard.html');
+                    } else {
+                        redirectTo('../index.html');
+                    }
+                }, 500);
+            } catch (error) {
+                console.error('Login error details:', error);
+                // Show detailed error message
+                const errorMessage = getUserFriendlyErrorMessage(error);
+                showNotification(errorMessage, 'error');
+            }
+        }
+
+        async function handleRegister(event) {
+            event.preventDefault();
+            const fullName = document.getElementById('registerName').value;
+            const email = document.getElementById('registerEmail').value;
+            const password = document.getElementById('registerPassword').value;
+            const passwordConfirm = document.getElementById('registerPasswordConfirm').value;
+            
+            if (password !== passwordConfirm) {
+                showNotification('Passwords do not match!', 'error');
+                return;
+            }
+            
+            if (!isValidEmail(email)) {
+                showNotification('Please enter a valid email address.', 'error');
+                return;
+            }
+            
+            try {
+                await register(fullName, email, password);
+                showNotification('Registration successful!', 'success');
+                setTimeout(() => {
+                    redirectTo('../index.html');
+                }, 500);
+            } catch (error) {
+                handleError(error);
+            }
+        }
+    </script>
+</body>
+</html>
+

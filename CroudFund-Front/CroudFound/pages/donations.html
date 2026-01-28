@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Donations - Crowdfund</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <div class="logo-icon">C</div>
+                    <span>Crowdfund</span>
+                </div>
+                <div class="nav-links">
+                    <a href="../index.html">Explore</a>
+                    <a href="campaigns.html">Campaigns</a>
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+                <div class="user-actions">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search campaigns...">
+                    </div>
+                    <button class="btn btn-primary" onclick="redirectTo('create-campaign.html')">Create Campaign</button>
+                    <div id="userMenu" style="position: relative;">
+                        <div class="user-profile" onclick="toggleUserMenu()" id="headerUserProfile">
+                            <img id="headerUserImage" src="" alt="User" style="display: none; width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                            <span id="userInitial">U</span>
+                        </div>
+                        <!-- User Dropdown Menu (shared across dashboard pages) -->
+                        <div class="user-dropdown" id="userDropdown" style="display: none;">
+                            <div class="user-dropdown-header">
+                                <img id="userDropdownImage" src="" alt="User" style="display: none; width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+                                <span id="userDropdownInitial" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: var(--primary-color); border-radius: 50%; font-weight: 600;">U</span>
+                                <div>
+                                    <div id="userDropdownName" style="font-weight: 600;">User Name</div>
+                                    <div style="font-size: 12px; color: var(--text-secondary);">View Profile</div>
+                                </div>
+                            </div>
+                            <div class="user-dropdown-divider"></div>
+                            <a href="dashboard.html" class="user-dropdown-item">
+                                <i class="fas fa-user"></i>
+                                <span>Profile</span>
+                            </a>
+                            <a href="settings.html" class="user-dropdown-item">
+                                <i class="fas fa-cog"></i>
+                                <span>Settings</span>
+                            </a>
+                            <div class="user-dropdown-divider"></div>
+                            <a href="#" class="user-dropdown-item" onclick="handleLogout(); return false;">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div style="text-align: center; margin-bottom: 32px;">
+                <div class="user-profile" style="width: 80px; height: 80px; margin: 0 auto 16px;">
+                    <span id="sidebarUserInitial" style="font-size: 32px;">U</span>
+                </div>
+                <div style="font-weight: 600; margin-bottom: 4px;" id="sidebarUserName">Loading...</div>
+                <div style="font-size: 12px; color: var(--primary-color);">VERIFIED CREATOR</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px;">
+                    <div>
+                        <div style="font-size: 20px; font-weight: 700;" id="impactCount">0</div>
+                        <div style="font-size: 12px; color: var(--text-muted);">IMPACT</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 20px; font-weight: 700;" id="projectsCount">0</div>
+                        <div style="font-size: 12px; color: var(--text-muted);">CAMPAIGNS</div>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                <li><a href="my-campaigns.html"><i class="fas fa-bullhorn"></i> My Campaigns</a></li>
+                <li><a href="donations.html" class="active"><i class="fas fa-heart"></i> Donations</a></li>
+                <li><a href="messages.html"><i class="fas fa-comments"></i> Messages</a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+            
+            <button class="btn btn-primary" style="width: 100%; margin-top: 24px;" onclick="redirectTo('create-campaign.html')">Start a Campaign</button>
+            <a href="#" style="display: block; text-align: center; margin-top: 16px; color: var(--text-secondary);">? Help Center</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="dashboard-content">
+            <div class="dashboard-header">
+                <div>
+                    <h1 class="dashboard-title">My Donations</h1>
+                    <p style="color: var(--text-secondary);">View all your contributions to campaigns</p>
+                </div>
+            </div>
+
+            <!-- Donations Table -->
+            <div class="card">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>CAMPAIGN</th>
+                            <th>AMOUNT</th>
+                            <th>DATE</th>
+                            <th>STATUS</th>
+                            <th>ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="donationsTableBody">
+                        <tr><td colspan="5" style="text-align: center; padding: 40px; color: var(--text-secondary);">Loading donations...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/search-utils.js"></script>
+    <script src="../js/pages/donations.js"></script>
+</body>
+</html>
+

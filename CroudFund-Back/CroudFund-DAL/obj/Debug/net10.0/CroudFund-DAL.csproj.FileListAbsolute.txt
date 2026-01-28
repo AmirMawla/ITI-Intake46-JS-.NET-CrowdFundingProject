@@ -1,0 +1,14 @@
+D:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-DAL\bin\Debug\net10.0\CroudFund-DAL.deps.json
+D:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-DAL\bin\Debug\net10.0\CroudFund-DAL.runtimeconfig.json
+D:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-DAL\bin\Debug\net10.0\CroudFund-DAL.dll
+D:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-DAL\bin\Debug\net10.0\CroudFund-DAL.pdb
+D:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-DAL\obj\Debug\net10.0\CroudFund-DAL.csproj.AssemblyReference.cache
+D:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-DAL\obj\Debug\net10.0\CroudFund-DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-DAL\obj\Debug\net10.0\CroudFund-DAL.AssemblyInfoInputs.cache
+D:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-DAL\obj\Debug\net10.0\CroudFund-DAL.AssemblyInfo.cs
+D:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-DAL\obj\Debug\net10.0\CroudFund-DAL.csproj.CoreCompileInputs.cache
+D:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-DAL\obj\Debug\net10.0\CroudFund-DAL.dll
+D:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-DAL\obj\Debug\net10.0\refint\CroudFund-DAL.dll
+D:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-DAL\obj\Debug\net10.0\CroudFund-DAL.pdb
+D:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-DAL\obj\Debug\net10.0\CroudFund-DAL.genruntimeconfig.cache
+D:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-DAL\obj\Debug\net10.0\ref\CroudFund-DAL.dll

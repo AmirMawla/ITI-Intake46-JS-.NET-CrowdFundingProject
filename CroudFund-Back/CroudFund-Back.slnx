@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CroudFund-BLL/CroudFund-BLL.csproj" />
+  <Project Path="CroudFund-DAL/CroudFund-DAL.csproj" />
+  <Project Path="CroudFund-PL/CroudFund-PL.csproj" />
+</Solution>

@@ -1,0 +1,17 @@
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\bin\Release\net10.0\CroudFund-BLL.deps.json
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\bin\Release\net10.0\CroudFund-BLL.runtimeconfig.json
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\bin\Release\net10.0\CroudFund-BLL.dll
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\bin\Release\net10.0\CroudFund-BLL.pdb
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\bin\Release\net10.0\CroudFund-DAL.dll
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\bin\Release\net10.0\CroudFund-DAL.pdb
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\obj\Release\net10.0\CroudFund-BLL.csproj.AssemblyReference.cache
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\obj\Release\net10.0\CroudFund-BLL.GeneratedMSBuildEditorConfig.editorconfig
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\obj\Release\net10.0\CroudFund-BLL.AssemblyInfoInputs.cache
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\obj\Release\net10.0\CroudFund-BLL.AssemblyInfo.cs
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\obj\Release\net10.0\CroudFund-BLL.csproj.CoreCompileInputs.cache
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\obj\Release\net10.0\CroudFun.E80F8BF4.Up2Date
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\obj\Release\net10.0\CroudFund-BLL.dll
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\obj\Release\net10.0\refint\CroudFund-BLL.dll
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\obj\Release\net10.0\CroudFund-BLL.pdb
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\obj\Release\net10.0\CroudFund-BLL.genruntimeconfig.cache
+d:\amir\data\programing\my projects\CroudFundProject\CroudFund-Back\CroudFund-BLL\obj\Release\net10.0\ref\CroudFund-BLL.dll

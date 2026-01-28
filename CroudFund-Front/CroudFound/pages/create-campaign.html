@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Your Campaign - Crowdfund</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .campaign-wizard {
+            padding: 40px 0;
+        }
+        .wizard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+        .wizard-steps {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .wizard-step {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-secondary);
+        }
+        .wizard-step.active {
+            color: var(--primary-color);
+        }
+        .wizard-step.completed {
+            color: var(--success-color);
+        }
+        .step-indicator {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid currentColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+        .wizard-step.completed .step-indicator {
+            background: var(--success-color);
+            border-color: var(--success-color);
+            color: white;
+        }
+        .wizard-step.active .step-indicator {
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+        .wizard-content {
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            padding: 32px;
+        }
+        .wizard-step-content {
+            display: none;
+        }
+        .wizard-step-content.active {
+            display: block;
+        }
+        .wizard-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+        }
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 32px;
+        }
+        .info-card {
+            background-color: var(--bg-card);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .info-card-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0, 124, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <div class="logo-icon">C</div>
+                    <span>Crowdfund</span>
+                </div>
+                <div class="nav-links">
+                    <a href="../index.html">Explore</a>
+                    <a href="campaigns.html" class="active">Campaigns</a>
+                    <a href="#reports">Reports</a>
+                    <a href="settings.html">Settings</a>
+                </div>
+                <div class="user-actions" style="position: relative;">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search campaigns...">
+                    </div>
+                    <div class="user-profile" onclick="toggleUserMenu()" id="headerUserProfile" style="position: relative;">
+                        <img id="headerUserImage" src="" alt="User" style="display: none; width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        <span id="userInitial">U</span>
+                    </div>
+                    <!-- User Dropdown Menu -->
+                    <div class="user-dropdown" id="userDropdown" style="display: none;">
+                        <div class="user-dropdown-header">
+                            <img id="userDropdownImage" src="" alt="User" style="display: none; width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+                            <span id="userDropdownInitial" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: var(--primary-color); border-radius: 50%; font-weight: 600;">U</span>
+                            <div>
+                                <div id="userDropdownName" style="font-weight: 600;">User Name</div>
+                                <div style="font-size: 12px; color: var(--text-secondary);">View Profile</div>
+                            </div>
+                        </div>
+                        <div class="user-dropdown-divider"></div>
+                        <a href="dashboard.html" class="user-dropdown-item">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                        <a href="settings.html" class="user-dropdown-item">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                        <div class="user-dropdown-divider"></div>
+                        <a href="#" class="user-dropdown-item" onclick="handleLogout(); return false;">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Logout</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container campaign-wizard">
+        <div class="wizard-header">
+            <div>
+                <h1 style="font-size: 36px; font-weight: 700; margin-bottom: 8px;">Launch Your Campaign</h1>
+                <p style="color: var(--text-secondary);">Empower your vision with a new crowdfunding campaign.</p>
+            </div>
+            <button class="btn btn-secondary" onclick="saveDraft()">Save Draft</button>
+        </div>
+
+        <div style="margin-bottom: 24px;">
+            <div style="font-size: 14px; color: var(--text-secondary); margin-bottom: 8px;">Step <span id="currentStep">1</span> of 3: <span id="stepName">Basics</span></div>
+            <div style="display: flex; align-items: center; gap: 16px;">
+                <div style="flex: 1; height: 8px; background: var(--bg-darker); border-radius: 4px; overflow: hidden;">
+                    <div id="progressBar" style="height: 100%; background: var(--primary-color); width: 33%; transition: width 0.3s ease;"></div>
+                </div>
+                <span style="font-size: 14px; color: var(--text-secondary);"><span id="progressPercent">33</span>% Completed</span>
+            </div>
+        </div>
+
+        <div class="wizard-steps">
+            <div class="wizard-step completed" data-step="1">
+                <div class="step-indicator">✓</div>
+                <span>Basics</span>
+            </div>
+            <div class="wizard-step" data-step="2">
+                <div class="step-indicator">2</div>
+                <span>Story</span>
+            </div>
+            <div class="wizard-step" data-step="3">
+                <div class="step-indicator">3</div>
+                <span>Review</span>
+            </div>
+        </div>
+
+        <form id="campaignForm" onsubmit="handleSubmit(event)">
+            <!-- Step 1: Basics -->
+            <div class="wizard-content">
+                <div class="wizard-step-content active" id="step1">
+                    <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 8px;">Campaign Basics</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 32px;">First, let's set the core identity of your campaign.</p>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Campaign Title</label>
+                        <input type="text" class="form-input" placeholder="e.g. Save the local wetlands campaign" required id="campaignTitle">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Category</label>
+                        <select class="form-select" required id="campaignCategory">
+                            <option value="">Select a category</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Campaign Image</label>
+                        <div class="file-upload" onclick="document.getElementById('imageInput').click()">
+                            <div class="file-upload-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                            <div style="font-weight: 600; margin-bottom: 8px;">Click or drag image to upload</div>
+                            <div style="font-size: 12px; color: var(--text-muted);">High-quality JPG, PNG or WEBP (Max 5MB)</div>
+                            <div style="margin-top: 12px;">
+                                <span class="status-badge" style="font-size: 10px;">AUTO-CONVERT TO BASE64 ENABLED</span>
+                            </div>
+                        </div>
+                        <input type="file" id="imageInput" accept="image/*" style="display: none;" onchange="handleImageUpload(event)">
+                        <img id="imagePreview" style="display: none; max-width: 100%; margin-top: 16px; border-radius: 8px;">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Brief Description</label>
+                        <div style="background: var(--bg-darker); padding: 8px; border-radius: 8px 8px 0 0; display: flex; gap: 8px; border: 1px solid var(--border-color); border-bottom: none;">
+                            <button type="button" style="padding: 4px 8px; background: none; border: none; color: var(--text-secondary); cursor: pointer;">B</button>
+                            <button type="button" style="padding: 4px 8px; background: none; border: none; color: var(--text-secondary); cursor: pointer;">I</button>
+                            <button type="button" style="padding: 4px 8px; background: none; border: none; color: var(--text-secondary); cursor: pointer;">U</button>
+                            <div style="width: 1px; background: var(--border-color); margin: 0 8px;"></div>
+                            <button type="button" style="padding: 4px 8px; background: none; border: none; color: var(--text-secondary); cursor: pointer;">•</button>
+                            <button type="button" style="padding: 4px 8px; background: none; border: none; color: var(--text-secondary); cursor: pointer;">1.</button>
+                            <button type="button" style="padding: 4px 8px; background: none; border: none; color: var(--text-secondary); cursor: pointer;">🔗</button>
+                            <button type="button" style="padding: 4px 8px; background: none; border: none; color: var(--text-secondary); cursor: pointer;">🖼️</button>
+                        </div>
+                        <textarea class="form-textarea" placeholder="Tell your campaign's story in a few sentences..." required id="campaignDescription" style="border-radius: 0 0 8px 8px;"></textarea>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                        <div class="form-group">
+                            <label class="form-label">Goal Amount (USD)</label>
+                            <input type="number" class="form-input" placeholder="$ 0.00" required id="goalAmount" min="1" step="0.01">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Deadline</label>
+                            <input type="date" class="form-input" required id="deadline" min="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Story (Placeholder) -->
+                <div class="wizard-step-content" id="step2">
+                    <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 32px;">Campaign Story</h2>
+                    <div class="form-group">
+                        <label class="form-label">Full Story</label>
+                        <textarea class="form-textarea" placeholder="Tell the full story of your campaign..." id="fullStory" style="min-height: 300px;"></textarea>
+                    </div>
+                </div>
+
+                <!-- Step 3: Review -->
+                <div class="wizard-step-content" id="step3">
+                    <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 32px;">Review Your Campaign</h2>
+                    <div id="reviewContent">
+                        <!-- Review content will be generated here -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="wizard-navigation">
+                <button type="button" class="btn btn-secondary" id="prevButton" style="display: none;">← Back</button>
+                <div></div>
+                <button type="button" class="btn btn-primary" id="nextButton" onclick="nextStep()">Next: Campaign Story →</button>
+                <button type="submit" class="btn btn-primary" id="submitButton" style="display: none;">Launch Campaign</button>
+            </div>
+        </form>
+
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-info-circle"></i></div>
+                <div>
+                    <div style="font-weight: 600; margin-bottom: 4px;">Tips</div>
+                    <div style="font-size: 12px; color: var(--text-secondary);">Use clear, engaging titles.</div>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-lock"></i></div>
+                <div>
+                    <div style="font-weight: 600; margin-bottom: 4px;">Security</div>
+                    <div style="font-size: 12px; color: var(--text-secondary);">Encrypted data transmission.</div>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon"><i class="fas fa-headset"></i></div>
+                <div>
+                    <div style="font-weight: 600; margin-bottom: 4px;">Help</div>
+                    <div style="font-size: 12px; color: var(--text-secondary);">24/7 campaign support team.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/search-utils.js"></script>
+    <script src="../js/pages/create-campaign.js"></script>
+</body>
+</html>
+

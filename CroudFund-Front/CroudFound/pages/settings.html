@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings - Crowdfund</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .settings-container {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 32px;
+            padding: 40px 16px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        @media (min-width: 1025px) {
+            .settings-container {
+                padding: 40px 20px;
+            }
+        }
+        @media (max-width: 1024px) {
+            .settings-container {
+                grid-template-columns: 1fr;
+                padding: 40px 24px;
+            }
+            .settings-sidebar {
+                position: static !important;
+                top: auto !important;
+                margin-bottom: 24px;
+            }
+        }
+        @media (max-width: 768px) {
+            .settings-container {
+                padding: 24px 16px;
+                gap: 16px;
+            }
+            .settings-sidebar {
+                position: static !important;
+                top: auto !important;
+                margin-bottom: 20px;
+                padding: 16px;
+                z-index: 1;
+            }
+            .settings-sidebar > div:first-child {
+                margin-bottom: 20px;
+            }
+            .settings-menu {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            .settings-menu li {
+                margin-bottom: 0;
+                flex-shrink: 0;
+            }
+            .settings-menu a {
+                padding: 8px 12px;
+                font-size: 14px;
+                white-space: nowrap;
+            }
+            .settings-content {
+                position: relative;
+                z-index: 1;
+            }
+            .settings-content h1 {
+                font-size: 24px !important;
+            }
+        }
+        .settings-sidebar {
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            padding: 24px;
+            height: fit-content;
+            position: sticky;
+            top: 100px;
+        }
+        /* Override sticky positioning on tablets and mobile - must come after base definition */
+        @media (max-width: 1024px) {
+            .settings-sidebar {
+                position: static !important;
+                top: auto !important;
+                transform: none !important;
+            }
+        }
+        /* Force static positioning on tablets and mobile */
+        @media (max-width: 1024px) {
+            .settings-sidebar {
+                position: static !important;
+                top: auto !important;
+            }
+        }
+        @media (max-width: 1024px) {
+            .settings-sidebar {
+                position: static !important;
+                top: auto !important;
+            }
+        }
+        .settings-menu {
+            list-style: none;
+        }
+        .settings-menu li {
+            margin-bottom: 8px;
+        }
+        .settings-menu a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            border-radius: 8px;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+        }
+        .settings-menu a:hover,
+        .settings-menu a.active {
+            background-color: var(--bg-card-hover);
+            color: var(--primary-color);
+        }
+        .settings-content {
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .settings-section {
+            margin-bottom: 48px;
+        }
+        .settings-section:last-child {
+            margin-bottom: 0;
+        }
+        .profile-image-container {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+        .profile-image-preview {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--border-color);
+        }
+        .profile-image-placeholder {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: var(--bg-darker);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: var(--text-muted);
+            border: 3px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <div class="logo-icon">C</div>
+                    <span>Crowdfund</span>
+                </div>
+                <div class="nav-links">
+                    <a href="../index.html">Discover</a>
+                    <a href="campaigns.html">Campaigns</a>
+                    <a href="dashboard.html">Reports</a>
+                </div>
+                <div class="user-actions">
+                    <div class="user-profile">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <div class="user-profile">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div id="userMenu" style="position: relative;">
+                        <div class="user-profile" onclick="toggleUserMenu()" id="headerUserProfile">
+                            <img id="headerUserImage" src="" alt="User" style="display: none; width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                            <span id="userInitial">U</span>
+                        </div>
+                        <!-- User Dropdown Menu (shared across dashboard pages) -->
+                        <div class="user-dropdown" id="userDropdown" style="display: none;">
+                            <div class="user-dropdown-header">
+                                <img id="userDropdownImage" src="" alt="User" style="display: none; width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+                                <span id="userDropdownInitial" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: var(--primary-color); border-radius: 50%; font-weight: 600;">U</span>
+                                <div>
+                                    <div id="userDropdownName" style="font-weight: 600;">User Name</div>
+                                    <div style="font-size: 12px; color: var(--text-secondary);">View Profile</div>
+                                </div>
+                            </div>
+                            <div class="user-dropdown-divider"></div>
+                            <a href="dashboard.html" class="user-dropdown-item">
+                                <i class="fas fa-user"></i>
+                                <span>Profile</span>
+                            </a>
+                            <a href="settings.html" class="user-dropdown-item">
+                                <i class="fas fa-cog"></i>
+                                <span>Settings</span>
+                            </a>
+                            <div class="user-dropdown-divider"></div>
+                            <a href="#" class="user-dropdown-item" onclick="handleLogout(); return false;">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container settings-container">
+        <!-- Sidebar -->
+        <div class="settings-sidebar">
+            <div style="text-align: center; margin-bottom: 32px;">
+                <div class="user-profile" style="width: 80px; height: 80px; margin: 0 auto 16px; position: relative;">
+                    <img id="sidebarUserImage" src="" alt="User" style="display: none; width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                    <span id="sidebarUserInitial" style="font-size: 32px;">U</span>
+                </div>
+                <div style="font-weight: 600; margin-bottom: 4px;" id="sidebarUserName">Loading...</div>
+                <div style="font-size: 12px; color: var(--text-muted);" id="sidebarUserRole">User Account</div>
+            </div>
+            
+            <ul class="settings-menu">
+                <li><a href="settings.html" class="active"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="#security"><i class="fas fa-shield-alt"></i> Security</a></li>
+                <li><a href="#notifications"><i class="fas fa-bell"></i> Notifications</a></li>
+                <li><a href="#payouts"><i class="fas fa-credit-card"></i> Payouts</a></li>
+            </ul>
+            
+            <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border-color);">
+                <button class="btn btn-secondary" style="width: 100%;" onclick="handleLogout()">← Logout</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="settings-content">
+            <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+                <button onclick="window.location.href='dashboard.html'" style="
+                    background: var(--bg-darker);
+                    border: 1px solid var(--border-color);
+                    border-radius: 8px;
+                    color: var(--text-primary);
+                    padding: 10px 16px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    font-weight: 600;
+                    transition: all 0.2s;
+                " onmouseover="this.style.background='var(--bg-card-hover)'; this.style.borderColor='var(--primary-color)'" onmouseout="this.style.background='var(--bg-darker)'; this.style.borderColor='var(--border-color)'">
+                    <i class="fas fa-arrow-left"></i> Back to Dashboard
+                </button>
+            </div>
+            <h1 style="font-size: 32px; font-weight: 700; margin-bottom: 8px;">Account Settings</h1>
+            <p style="color: var(--text-secondary); margin-bottom: 32px;">Manage your public profile information and account security preferences.</p>
+
+            <!-- Profile Information -->
+            <div class="settings-section">
+                <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 24px;">Profile Information</h2>
+                
+                <div class="profile-image-container">
+                    <div>
+                        <img id="profileImagePreview" class="profile-image-preview" style="display: none;" alt="Profile">
+                        <div id="profileImagePlaceholder" class="profile-image-placeholder"><i class="fas fa-user"></i></div>
+                    </div>
+                    <div>
+                        <div style="font-weight: 600; margin-bottom: 4px;">Profile Picture</div>
+                        <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">JPG, GIF or PNG. Max size of 800K</div>
+                        <div style="display: flex; gap: 12px;">
+                            <button class="btn btn-primary" onclick="document.getElementById('profileImageInput').click()">Upload New</button>
+                            <button class="btn btn-secondary" onclick="removeProfileImage()">Remove</button>
+                        </div>
+                        <input type="file" id="profileImageInput" accept="image/*" style="display: none;" onchange="handleProfileImageUpload(event)">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-input" id="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-input" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Public Bio</label>
+                    <textarea class="form-textarea" id="bio" placeholder="Tell us about yourself..." maxlength="250"></textarea>
+                    <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+                        <span id="bioCharCount">0</span> / 250 characters
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" onclick="saveProfile()">Save Profile Changes</button>
+            </div>
+
+            <!-- Security & Password -->
+            <div class="settings-section">
+                <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 24px; display: flex; align-items: center; gap: 8px;">
+                    <i class="fas fa-shield-alt"></i> Security & Password
+                </h2>
+
+                <div class="form-group">
+                    <label class="form-label">Current Password</label>
+                    <div style="position: relative;">
+                        <input type="password" class="form-input" id="currentPassword" placeholder="Enter current password">
+                        <span style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); cursor: pointer;" onclick="togglePasswordVisibility('currentPassword')"><i class="fas fa-eye"></i></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">New Password</label>
+                    <input type="password" class="form-input" id="newPassword" placeholder="Enter new password" minlength="8">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Confirm New Password</label>
+                    <input type="password" class="form-input" id="confirmPassword" placeholder="Repeat new password" minlength="8">
+                </div>
+
+                <div class="card" style="background: rgba(0, 124, 255, 0.1); border: 1px solid rgba(0, 124, 255, 0.3); margin-bottom: 24px;">
+                    <div style="display: flex; align-items: start; gap: 12px;">
+                        <span style="font-size: 20px;"><i class="fas fa-info-circle"></i></span>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 4px;">Password Requirements</div>
+                            <div style="font-size: 14px; color: var(--text-secondary);">Minimum 8 characters. Must contain at least one uppercase letter, one number, and one special character.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" onclick="updatePassword()">Update Password</button>
+            </div>
+
+            <!-- Deactivate Account -->
+            <div class="settings-section">
+                <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 16px; color: var(--error-color);">Deactivate Account</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 24px;">Once you deactivate your account, all your data will be permanently removed.</p>
+                <button class="btn btn-danger" onclick="deactivateAccount()">Close Account</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/pages/settings.js"></script>
+</body>
+</html>
+
