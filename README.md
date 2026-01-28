@@ -47,10 +47,6 @@ Full-stack crowdfunding platform:
 - **.NET SDK** (recommended: latest installed on your machine)
 - **SQL Server** (LocalDB or SQL Server instance used by your connection string)
 - **JWT** (Add Secret Key For Jwt In secret Keys 
-Jwt : {
-"Key" : "secret key here" 
-}
-)
 
 
 ---
@@ -100,15 +96,7 @@ Then open:
 
 ## Default seed accounts
 
-Seeded admin user is created in `SeedData.cs`. Example:
-
-- **Admin**
-  - Email: `admin@fundhub.com`
-  - Password: `Admin@123`
-
-- **User**
-  - Email: `mariam@fundhub.com`
-  - Password: `User@123`
+Seeded admin user is created in `SeedData.cs`.
 ---
 
 ## Notes
